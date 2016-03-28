@@ -96,11 +96,9 @@
 % Informações de dados para CAPA e FOLHA DE ROSTO
 % ---
 \titulo{Modelo Canônico de\\ Artigo científico com \abnTeX}
-\autor{Equipe \abnTeX\thanks{\url{http://www.abntex.net.br/}} \and Lauro
-César
-Araujo\thanks{laurocesar@laurocesar.com}}
+\autor{Arthur Boesing Bilibio \and José Luiz Moresco Kaszuba \and Wagner Casagrande}
 \local{Brasil}
-\data{2015, v-1.9.6}
+\data{2016}
 % ---
 
 % ---
@@ -116,13 +114,13 @@ Araujo\thanks{laurocesar@laurocesar.com}}
 		pdftitle={\@title}, 
 		pdfauthor={\@author},
     	pdfsubject={Modelo de artigo científico com abnTeX2},
-	    pdfcreator={LaTeX with abnTeX2},
-		pdfkeywords={abnt}{latex}{abntex}{abntex2}{atigo científico}, 
+	    pdfcreator={Arthur Bilibio},
+		pdfkeywords={abnt}{latex}{abntex}{abntex2}{atigo científico},
 		colorlinks=true,       		% false: boxed links; true: colored links
-    	linkcolor=blue,          	% color of internal links
-    	citecolor=blue,        		% color of links to bibliography
-    	filecolor=magenta,      		% color of file links
-		urlcolor=blue,
+    	linkcolor=black,          	% color of internal links
+    	citecolor=black,        		% color of links to bibliography
+    	filecolor=black,      	% color of file links
+		urlcolor=black,
 		bookmarksdepth=4
 }
 \makeatother
@@ -183,18 +181,18 @@ Araujo\thanks{laurocesar@laurocesar.com}}
 
 % resumo em português
 \begin{resumoumacoluna}
- Conforme a ABNT NBR 6022:2003, o resumo é elemento obrigatório, constituído de
- uma sequência de frases concisas e objetivas e não de uma simples enumeração
- de tópicos, não ultrapassando 250 palavras, seguido, logo abaixo, das palavras
- representativas do conteúdo do trabalho, isto é, palavras-chave e/ou
- descritores, conforme a NBR 6028. (\ldots) As palavras-chave devem figurar logo
- abaixo do resumo, antecedidas da expressão Palavras-chave:, separadas entre si por
- ponto e finalizadas também por ponto.
- 
- \vspace{\onelineskip}
- 
- \noindent
- \textbf{Palavras-chave}: latex. abntex. editoração de texto.
+	Conforme a ABNT NBR 6022:2003, o resumo é elemento obrigatório, constituído de
+	uma sequência de frases concisas e objetivas e não de uma simples enumeração
+	de tópicos, não ultrapassando 250 palavras, seguido, logo abaixo, das palavras
+	representativas do conteúdo do trabalho, isto é, palavras-chave e/ou
+	descritores, conforme a NBR 6028. (\ldots) As palavras-chave devem figurar logo
+	abaixo do resumo, antecedidas da expressão Palavras-chave:, separadas entre si por
+	ponto e finalizadas também por ponto.
+	
+	\vspace{\onelineskip}
+	
+	\noindent
+	\textbf{Palavras-chave}: latex. abntex. editoração de texto.
 \end{resumoumacoluna}
 
 % ]  				% FIM DE ARTIGO EM DUAS COLUNAS
@@ -395,7 +393,7 @@ referência completa das macros e ambientes disponíveis.
 \lipsum[1]
 
 \begin{citacao}
-\lipsum[2]
+	\lipsum[2]
 \end{citacao}
 
 \lipsum[3]
@@ -419,15 +417,15 @@ referência completa das macros e ambientes disponíveis.
 % resumo em português
 \renewcommand{\resumoname}{Abstract}
 \begin{resumoumacoluna}
- \begin{otherlanguage*}{english}
-   According to ABNT NBR 6022:2003, an abstract in foreign language is a back
-   matter mandatory element.
-
-   \vspace{\onelineskip}
- 
-   \noindent
-   \textbf{Keywords}: latex. abntex.
- \end{otherlanguage*}  
+	\begin{otherlanguage*}{english}
+		According to ABNT NBR 6022:2003, an abstract in foreign language is a back
+		matter mandatory element.
+		
+		\vspace{\onelineskip}
+		
+		\noindent
+		\textbf{Keywords}: latex. abntex.
+	\end{otherlanguage*}  
 \end{resumoumacoluna}
 
 % ]  				% FIM DE ARTIGO EM DUAS COLUNAS
@@ -455,13 +453,11 @@ referência completa das macros e ambientes disponíveis.
 % Inicia os apêndices
 % ---
 \begin{apendicesenv}
-
-% ----------------------------------------------------------
-\chapter{Nullam elementum urna vel imperdiet sodales elit ipsum pharetra ligula
-ac pretium ante justo a nulla curabitur tristique arcu eu metus}
-% ----------------------------------------------------------
-\lipsum[55-57]
-
+	% ----------------------------------------------------------
+	\chapter{Nullam elementum urna vel imperdiet sodales elit ipsum pharetra ligula
+		ac pretium ante justo a nulla curabitur tristique arcu eu metus}
+	% ----------------------------------------------------------
+	\lipsum[55-57]
 \end{apendicesenv}
 % ---
 
@@ -474,14 +470,12 @@ ac pretium ante justo a nulla curabitur tristique arcu eu metus}
 % ---
 %\anexos
 \begin{anexosenv}
-
-% ---
-\chapter{Cras non urna sed feugiat cum sociis natoque penatibus et magnis dis
-parturient montes nascetur ridiculus mus}
-% ---
-
-\lipsum[31]
-
+	% ---
+	\chapter{Cras non urna sed feugiat cum sociis natoque penatibus et magnis dis
+		parturient montes nascetur ridiculus mus}
+	% ---
+	
+	\lipsum[31]
 \end{anexosenv}
 
 \end{document}
