@@ -42,6 +42,7 @@
 	english,			% idioma adicional para hifenização
 	brazil,				% o último idioma é o principal do documento
 	sumario=tradicional
+%	twocolumn
 	]{abntex2}
 
 
@@ -110,18 +111,18 @@
 % informações do PDF
 \makeatletter
 \hypersetup{
-     	%pagebackref=true,
-		pdftitle={\@title}, 
-		pdfauthor={\@author},
-    	pdfsubject={Modelo de artigo científico com abnTeX2},
-	    pdfcreator={Arthur Bilibio},
-		pdfkeywords={abnt}{latex}{abntex}{abntex2}{atigo científico},
-		colorlinks=true,       		% false: boxed links; true: colored links
-    	linkcolor=black,          	% color of internal links
-    	citecolor=black,        	% color of links to bibliography
-    	filecolor=black,	      	% color of file links
-		urlcolor=black,
-		bookmarksdepth=4
+	%pagebackref=true,
+	pdftitle={\@title},
+	pdfauthor={\@author},
+	pdfsubject={Modelo de artigo científico com abnTeX2},
+	pdfcreator={Arthur Bilibio},
+	pdfkeywords={abnt}{latex}{abntex}{abntex2}{atigo científico},
+	colorlinks=true,       		% false: boxed links; true: colored links
+	linkcolor=black,          	% color of internal links
+	citecolor=black,        	% color of links to bibliography
+	filecolor=black,	      	% color of file links
+	urlcolor=black,
+	bookmarksdepth=4
 }
 \makeatother
 % --- 
@@ -206,7 +207,8 @@
 % ----------------------------------------------------------
 % Introdução
 % ----------------------------------------------------------
-\section*{Introdução}
+%\section*{Introdução}
+\section{INTRODUÇÃO}
 \addcontentsline{toc}{section}{Introdução}
 orekropwqkropwqk
 
@@ -214,140 +216,14 @@ orekropwqkropwqk
 % ----------------------------------------------------------
 % Seção de explicações
 % ----------------------------------------------------------
-\section{Exemplos de comandos}
+\section{DESENVOLVIMENTO}
 
-\subsection{Margens}
+\subsection{REFERENCIAL TEÓRICO}
 
-A norma ABNT NBR 6022:2003 não estabelece uma margem específica a ser utilizada
-no artigo científico. Dessa maneira, caso deseje alterar as margens, utilize os
-comandos abaixo:
+\subsection{PROCEDIMENTOS METODOLÓGICOS}
 
-\begin{verbatim}
-   \setlrmarginsandblock{3cm}{3cm}{*}
-   \setulmarginsandblock{3cm}{3cm}{*}
-   \checkandfixthelayout
-\end{verbatim}
 
-\subsection{Duas colunas}
-
-É comum que artigos científicos sejam escritos em duas colunas. Para isso,
-adicione a opção \texttt{twocolumn} à classe do documento, como no exemplo:
-
-\begin{verbatim}
-   \documentclass[article,11pt,oneside,a4paper,twocolumn]{abntex2}
-\end{verbatim}
-
-É possível indicar pontos do texto que se deseja manter em apenas uma coluna,
-geralmente o título e os resumos. Os resumos em única coluna em documentos com
-a opção \texttt{twocolumn} devem ser escritos no ambiente
-\texttt{resumoumacoluna}:
-
-\begin{verbatim}
-   \twocolumn[              % INICIO DE ARTIGO EM DUAS COLUNAS
-
-     \maketitle             % pagina de titulo
-
-     \renewcommand{\resumoname}{Nome do resumo}
-     \begin{resumoumacoluna}
-        Texto do resumo.
-      
-        \vspace{\onelineskip}
- 
-        \noindent
-        \textbf{Palavras-chave}: latex. abntex. editoração de texto.
-     \end{resumoumacoluna}
-   
-   ]                        % FIM DE ARTIGO EM DUAS COLUNAS
-\end{verbatim}
-
-\subsection{Recuo do ambiente \texttt{citacao}}
-
-Na produção de artigos (opção \texttt{article}), pode ser útil alterar o recuo
-do ambiente \texttt{citacao}. Nesse caso, utilize o comando:
-
-\begin{verbatim}
-   \setlength{\ABNTEXcitacaorecuo}{1.8cm}
-\end{verbatim}
-
-Quando um documento é produzido com a opção \texttt{twocolumn}, a classe
-\textsf{abntex2} automaticamente altera o recuo padrão de 4 cm, definido pela
-ABNT NBR 10520:2002 seção 5.3, para 1.8 cm.
-
-\section{Cabeçalhos e rodapés customizados}
-
-Diferentes estilos de cabeçalhos e rodapés podem ser criados usando os
-recursos padrões do \textsf{memoir}.
-
-Um estilo próprio de cabeçalhos e rodapés pode ser diferente para páginas pares
-e ímpares. Observe que a diferenciação entre páginas pares e ímpares só é
-utilizada se a opção \texttt{twoside} da classe \textsf{abntex2} for utilizado.
-Caso contrário, apenas o cabeçalho padrão da página par (\emph{even}) é usado.
-
-Veja o exemplo abaixo cria um estilo chamado \texttt{meuestilo}. O código deve
-ser inserido no preâmbulo do documento.
-
-\begin{verbatim}
-%%criar um novo estilo de cabeçalhos e rodapés
-\makepagestyle{meuestilo}
-  %%cabeçalhos
-  \makeevenhead{meuestilo} %%pagina par
-     {topo par à esquerda}
-     {centro \thepage}
-     {direita}
-  \makeoddhead{meuestilo} %%pagina ímpar ou com oneside
-     {topo ímpar/oneside à esquerda}
-     {centro\thepage}
-     {direita}
-  \makeheadrule{meuestilo}{\textwidth}{\normalrulethickness} %linha
-  %% rodapé
-  \makeevenfoot{meuestilo}
-     {rodapé par à esquerda} %%pagina par
-     {centro \thepage}
-     {direita} 
-  \makeoddfoot{meuestilo} %%pagina ímpar ou com oneside
-     {rodapé ímpar/onside à esquerda}
-     {centro \thepage}
-     {direita}
-\end{verbatim}
-
-Para usar o estilo criado, use o comando abaixo imediatamente após um dos
-comandos de divisão do documento. Por exemplo:
-
-\begin{verbatim}
-   \begin{document}
-     %%usar o estilo criado na primeira página do artigo:
-     \pretextual
-     \pagestyle{meuestilo}
-     
-     \maketitle
-     ...
-     
-     %%usar o estilo criado nas páginas textuais
-     \textual
-     \pagestyle{meuestilo}
-     
-     \chapter{Novo capítulo}
-     ...
-   \end{document}  
-\end{verbatim}
-   
-Outras informações sobre cabeçalhos e rodapés estão disponíveis na seção 7.3 do
-manual do \textsf{memoir} \cite{memoir}.
-
-\section{Mais exemplos no Modelo Canônico de Trabalhos Acadêmicos}
-
-Este modelo de artigo é limitado em número de exemplos de comandos, pois são
-apresentados exclusivamente comandos diretamente relacionados com a produção de
-artigos.
-
-Para exemplos adicionais de \abnTeX\ e \LaTeX, como inclusão de figuras,
-fórmulas matemáticas, citações, e outros, consulte o documento
-\citeonline{abntex2modelo}.
-
-\section{Consulte o manual da classe \textsf{abntex2}}
-
-Consulte o manual da classe \textsf{abntex2} \cite{abntex2classe} para uma
-referência completa das macros e ambientes disponíveis.
+\subsection{ANÁLISE E INTERPRETAÇÃO DOS DADOS}
 
 % ---
 % Finaliza a parte no bookmark do PDF, para que se inicie o bookmark na raiz
@@ -358,16 +234,7 @@ referência completa das macros e ambientes disponíveis.
 % ---
 % Conclusão
 % ---
-\section*{Considerações finais}
-\addcontentsline{toc}{section}{Considerações finais}
-
-\lipsum[1]
-
-\begin{citacao}
-	\lipsum[2]
-\end{citacao}
-
-\lipsum[3]
+\subsection{CONCLUSÃO}
 
 % ----------------------------------------------------------
 % ELEMENTOS PÓS-TEXTUAIS
@@ -381,7 +248,7 @@ referência completa das macros e ambientes disponíveis.
 % \twocolumn[    		% INICIO DE ARTIGO EM DUAS COLUNAS
 
 % titulo em inglês
-\titulo{Canonical academic article model with \abnTeX}
+\titulo{Reading Influence in the Formation of Work Profile of The Engineers}
 \emptythanks
 \maketitle
 
@@ -419,34 +286,33 @@ referência completa das macros e ambientes disponíveis.
 % ----------------------------------------------------------
 % Apêndices
 % ----------------------------------------------------------
-
 % ---
 % Inicia os apêndices
 % ---
-\begin{apendicesenv}
-	% ----------------------------------------------------------
-	\chapter{Nullam elementum urna vel imperdiet sodales elit ipsum pharetra ligula
-		ac pretium ante justo a nulla curabitur tristique arcu eu metus}
-	% ----------------------------------------------------------
-	\lipsum[55-57]
-\end{apendicesenv}
+%\begin{apendicesenv}
+%	% ----------------------------------------------------------
+%	\chapter{Nullam elementum urna vel imperdiet sodales elit ipsum pharetra ligula
+%		ac pretium ante justo a nulla curabitur tristique arcu eu metus}
+%	% ----------------------------------------------------------
+%	\lipsum[55-57]
+%\end{apendicesenv}
 % ---
 
 % ----------------------------------------------------------
 % Anexos
 % ----------------------------------------------------------
-\cftinserthook{toc}{AAA}
+%\cftinserthook{toc}{AAA}
 % ---
 % Inicia os anexos
 % ---
 %\anexos
-\begin{anexosenv}
-	% ---
-	\chapter{Cras non urna sed feugiat cum sociis natoque penatibus et magnis dis
-		parturient montes nascetur ridiculus mus}
-	% ---
-	
-	\lipsum[31]
-\end{anexosenv}
+%\begin{anexosenv}
+%	% ---
+%	\chapter{Cras non urna sed feugiat cum sociis natoque penatibus et magnis dis
+%		parturient montes nascetur ridiculus mus}
+%	% ---
+%	
+%	\lipsum[31]
+%\end{anexosenv}
 
 \end{document}
