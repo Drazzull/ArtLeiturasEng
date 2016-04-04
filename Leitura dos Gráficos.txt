@@ -2,9 +2,39 @@ Para a obtenção dos dados, foi analisado um grupo com 118 acadêmicos dos diverso
 
 Gráfico "Sexo":
 Conforme análise do questionário aplicado, identifica-se que 40,7% dos entrevistados são do sexo feminino, enquanto 59,3% são do sexo masculino.
+Percebe-se que a maioria dos acadêmicos dos cursos de engenharia questionados são do sexo masculino.
 
 Gráfico "Idade":
 Foram identificados que 72% alunos estão entre 18 e 22 anos, 22% estão entre 23 e 27 anos, 2,5% estão entre 28 e 32 anos, 1,7% estão entre 33 e 36 anos e 1,7% estão acima de 37 anos.
 
 Gráfico "Curso que Frequenta":
 A partir do grupo questionado, 27,1% alunos são do curso de Engenharia de Computação, 46,6% do curso de Engenharia Civil, 15,3% do curso de Engenharia Elétrica, 8,5% do curso de Engenharia Química e 2,5% de Engenharia de Produção Mecânica. Os cursos de Engenharia Mecânica e Engenharia de Produção não foram questionados.
+
+Gráfico "Em relação a sua ocupação":
+A partir da amostra, nota-se que 38,1% dos estudantes trabalham na área de formação do curso que frequentam, 15,3% trabalham fora da área de formação, 43,2% são apenas estudantes e os outros 3,4% responderam "Outros".
+
+Gráfico "":
+
+Gráfico "":
+
+Gráfico "":
+
+Gráfico "":
+
+Gráfico "":
+
+Gráfico "":
+
+Gráfico "":
+
+Gráfico "":
+
+Gráfico "":
+
+Gráfico "":
+
+Gráfico "":
+
+Gráfico "":
+
+Gráfico "":
