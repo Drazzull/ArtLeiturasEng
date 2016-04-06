@@ -13,15 +13,20 @@ A partir do grupo questionado, 27,1% alunos são do curso de Engenharia de Comput
 Gráfico "Em relação a sua ocupação":
 A partir da amostra, nota-se que 38,1% dos estudantes trabalham na área de formação do curso que frequentam, 15,3% trabalham fora da área de formação, 43,2% são apenas estudantes e os outros 3,4% responderam "Outros".
 
-Gráfico "":
+Gráfico "Elementos da escrita são importantes para o âmbito profissional":
+75,2% dos acadêmicos informam que a capacidade de conferir precisão e objetividade a informação são os elementos mais importantes para o âmbito profissional, 11,1% informaram que a correção gramatical é importante, para 12% dos entrevistados a padronização gramatical é um ponto forte, enquanto 1,7% acham que outros elementos, além dos citados, são mais importantes para o ambiente profissional.
 
-Gráfico "":
+Gráfico "Quanto a escrita, qual o gênero textual você escreve com mais frequência":
+16,9% informaram que os trabalhos acadêmicos são os seus textos mais escritos, 54,2% informaram que os e-mails e relatórios são os genêros mais escritos, 27,1% responderam que são os generos digitais (redes sociais e blogs), enquanto 1,7% responderam que escrevem outros tipos de textos.
 
-Gráfico "":
+Gráfico "Você gosta de ler?":
+37,3% dos acadêmicos informaram que gostam de ler, 14,4% não gostam de ler, enquanto 48,3% responderam que as vezes gostam de ler.
 
-Gráfico "":
+Gráfico "Quão atraído você se sente pela leitura?":
+Em um nível de 1 a 10, 2,5% deram a nota 1, 3,4% a nota 4, 5,1% a nota 3, 5,9% a nota 4, 14,4% a nota 5, 16,1% a nota 6, 17,8% a nota 7, 19,5% a nota 8, 5,9% a nota 9 e 9,3% a nota 10.
 
-Gráfico "":
+Gráfico "Quantos livros leu no último ano?":
+13,6% responderam que leram apenas 1 livro, 39,8% leram até 3 livros, 16,1% leram de 4 a 6 livros, 11,9% leram de 7 a 10 livros, 0,8% leram de 11 a 15 livros, 3,4% leram mais que 15 livros e 14,4% não leram nenhum livro.
 
 Gráfico "":
 
